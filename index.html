@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KITE - Multi-purpose One Page Template</title>
+    <link rel="icon" href="img/fabicon.png">
+
+    <!-- Custom Fonts: Railway & Lato -->
+    <link href='https://www.google.com/fonts#UsePlace:use/Collection:Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwsome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style-dark.css" rel="stylesheet">
+
+
+    <!-- Script for Map section -->
+    <script
+	src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+	</script>
+	
+	<script>
+	var myCenter=new google.maps.LatLng(23.7937868,90.4046153);
+
+	function initialize(){
+		var mapProp = {
+		  center:myCenter,
+		  zoom:15,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		var marker=new google.maps.Marker({
+		  position:myCenter,
+		  });
+
+		marker.setMap(map);
+
+		var infowindow = new google.maps.InfoWindow({
+		  content:"We're Here"
+		  });
+
+		infowindow.open(map,marker);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<!-- Modernizr -->
+	<script src="js/modernizr.custom.12691.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="row-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand page-scroll" href="#page-top"><div class="brand-logo"></div></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">
+					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+						<li class="hidden"><a href="#page-top"></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">layouts  <i class="fa fa-angle-down"></i></b></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+	                            <li><a href="index_light.html">Landing Page Light</a></li>
+	                        </ul>
+						</li>
+						<li><a class="page-scroll" href="#featured-services-secton">Services</a></li>
+						<li><a class="page-scroll" href="#portfolio">Portfilio</a></li>
+						<li><a class="page-scroll" href="#aboutus">About</a></li>
+						<li><a class="page-scroll" href="#clients">Clients</a></li>
+						<li><a class="page-scroll" href="#price-table">Pricing</a></li>
+						<li class="dropdown">
+							<a class="page-scroll" href="#blog">Blog <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Blog List</a></li>
+								<li><a href="#">Blog Post</a></li>
+							</ul>
+						</li>
+						<li><a class="page-scroll" href="#contact">Contact</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.row -->
+		</div>
+		<!-- /.container -->
+    </nav>
+    <!-- Navigation -->
+
+
+
+    <!-- Full Page Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+        	<!-- Slider 01 -->
+            <div class="item active">
+                <div class="fill">
+                	<div class="fill-overlay"></div>
+                	<img alt="CloudBee : kite" src="img/slider_01.jpg">
+                </div>
+                <div class="carousel-caption carousel-content">
+                	<div class="container">
+                		<div class="row">
+                			<div class="col-md-5 col-md-push-6 wow fadeInUp">
+		                		<h2>Pure HTML5 & CSS3</h2>
+		                		<h5>Proin gratvida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem elit auctor aliquet</h5>
+		                		<a href="#" class="btn btn-fill">Join Now</a>
+		                		<a href="#" class="btn btn-white">Learn More</i></a>
+		                	</div>
+                		</div><!-- /.row -->
+                	</div><!-- /.container -->
+                </div>
+            </div><!-- /Slider 01 -->
+
+            <!-- Slider 02 -->
+            <div class="item">
+                <div class="fill">
+                	<div class="fill-overlay"></div>
+                	<img alt="CloudBee : kite" src="img/slider_02.jpg">
+                </div>
+                <div class="carousel-caption carousel-content">
+                	<div class="container">
+                		<div class="row">
+                			<div class="col-md-5 col-md-push-1 wow fadeInUp">
+		                		<h2>Pure HTML5 & CSS3</h2>
+		                		<h5>Proin gratvida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem elit auctor aliquet</h5>
+		                		<a href="#" class="btn btn-fill">Join Now</a>
+		                		<a href="#" class="btn btn-white">Learn More</a>
+		                	</div>
+                		</div><!-- /.row -->
+                	</div><!-- /.container -->
+                </div>
+            </div><!-- /Slider 02 -->
+
+            <!-- Slider 03 -->
+            <div class="item">
+                <div class="fill">
+                	<div class="fill-overlay"></div>
+                	<img alt="CloudBee : kite" src="img/slider_03.jpg">
+                </div>
+                <div class="carousel-caption carousel-content">
+                	<div class="container">
+                		<div class="row">
+                			<div class="col-md-5 col-md-push-6 wow fadeInUp">
+		                		<h2>Pure HTML5 & CSS3</h2>
+		                		<h5>Proin gratvida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem elit auctor aliquet</h5>
+		                		<a href="#" class="btn btn-fill">Join Now</a>
+		                		<a href="#" class="btn btn-white">Learn More</a>
+		                	</div>
+                		</div><!-- /.row -->
+                	</div><!-- /.container -->
+                </div>
+            </div><!-- /Slider 03 -->
+
+            <!-- Slider 04 -->
+            <div class="item">
+                <div class="fill">
+                	<div class="fill-overlay"></div>
+                	<video width="100%" height="auto" controls autoplay muted loop>
+					  <source src="video/explore/explore.mp4" type="video/mp4">
+					  <source src="video/explore/explore.webm" type="video/webm">
+					  Your browser does not support HTML5 video.
+					</video>
+                </div>
+                <div class="carousel-caption carousel-content">
+                	<div class="container">
+                		<div class="row">
+                			<div class="col-md-5 col-md-push-1 wow fadeInUp">
+		                		<h2>Pure HTML5 & CSS3</h2>
+		                		<h5>Proin gratvida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem elit auctor aliquet</h5>
+		                		<a href="#" class="btn btn-fill">Join Now</a>
+		                		<a href="#" class="btn btn-white">Learn More</a>
+		                	</div>
+                		</div><!-- /.row -->
+                	</div><!-- /.container -->
+                </div>
+            </div><!-- /Slider 04 -->
+
+            
+        </div>
+
+        <!-- Controls -->
+        <span>
+        	<a class="left carousel-control carousel-control-navi" href="#myCarousel" data-slide="prev">
+            	<i class="fa fa-angle-left"></i>
+        	</a>
+        </span>
+        <span>
+        	<a class="right carousel-control carousel-control-navi" href="#myCarousel" data-slide="next">
+            	<i class="fa fa-angle-right"></i>
+        	</a>
+        </span>
+        <!-- /Controls -->
+    </header>
+    <!-- /Full Page Carousel Header -->
+
+
+    <!-- Featured Services Section -->
+    <section class="section-wrapper" id="featured-services-secton">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-8 col-md-push-2">
+	            	<div class="section-title-white wow fadeInDown">
+	            		<h2>What We're Doing</h2>
+	                	<h4>View & explore new features</h4>
+	            	</div>
+	            </div>
+	        </div><!-- /.row -->
+
+	        <div class="row wow fadeInUp">
+	        	<div class="col-md-4 col-sm-4 featured-item">
+			        <div class="list wow fadeInRightBig">
+			          	<img class="flat-icons" src="img/icons/web.png" alt="flaticons">
+			          	<h4>Web Development</h4>
+		        		<p>This is Photoshop's version  of Lorem Ips um. Proin gravida nibh auctor aliquet. Aenean sollicitudi...</p>
+			        </div>
+
+			        <div class="list wow fadeInRightBig" data-wow-delay="0.4s">
+			          	<img class="flat-icons" src="img/icons/ui-ux.png" alt="flaticons">
+			          	<h4>UI & UX Design</h4>
+		        		<p>This is Photoshop's version  of Lorem Ips um. Proin gravida nibh auctor aliquet. Aenean sollicitudi...</p>
+			        </div>
+			    </div>
+			    <div class="col-md-4 col-sm-4 wow fadeInUpBig" style="margin-top:-30px;">
+			        <img src="img/device-1.png" class="img-responsive" alt="mobile-apps">
+			    </div>
+			    <div class="col-md-4 col-sm-4 featured-item">
+		          <div class="list wow fadeInLeftBig" data-wow-delay="0.2s">
+		            	<img class="flat-icons" src="img/icons/programming.png" alt="flaticons">
+			          	<h4>Programming</h4>
+		        		<p>This is Photoshop's version  of Lorem Ips um. Proin gravida nibh auctor aliquet. Aenean sollicitudi...</p>
+		          </div>
+
+		          <div class="list wow fadeInLeftBig" data-wow-delay="0.6s">
+		            	<img class="flat-icons" src="img/icons/cms.png" alt="flaticons">
+			          	<h4>CMS Services</h4>
+		        		<p>This is Photoshop's version  of Lorem Ips um. Proin gravida nibh auctor aliquet. Aenean sollicitudi...</p>
+		          </div>
+		        </div>
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+	<!-- Call To Action Section -->
+    <section class="section-wrapper call-to-action call-to-action-dark" id="call-to-action-1">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-7 col-md-push-1">
+	                <div class="section-title-white wow fadeInDown">
+	                	<h2>Satisfaction comes first</h2>
+	                	<h4>We’re passionate about simplifying...</h4>
+	                </div>
+	            </div>
+	            <div class="col-md-2 col-md-push-1 btn-call-to-action"><a class="btn btn-default" href="#">GET STARTED NOW</a></div>
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+	</section><!-- /.wrapper -->
+
+    <!-- Portfolio Section -->
+    <section class="section-wrapper" id="portfolio">
+    	<div class="container">
+	        
+	        <div class="row">
+	            <div class="col-md-8 col-md-push-2">
+	            	<div class="section-title-white wow fadeInDown">
+	            		<h2>Portfolio</h2>
+	                	<h4>Take a moment to view & explore our new features</h4>
+	            	</div>
+	            </div>
+	        </div><!-- /.row -->
+
+	        <div class="row">
+	        	<div id="portfolio-items">
+		        	<div class="controls text-center portfolio-filters">
+					    <a class="filter btn btn-default" data-filter="all">all</a>
+						<a class="filter btn btn-default" data-filter=".web_design">web design</a>
+						<a class="filter btn btn-default" data-filter=".logo">logo</a>
+						<a class="filter btn btn-default" data-filter=".illustration">illustration</a>
+					</div>
+
+					<div class="text-center">
+
+						<div class="col-md-3 mix web_design" data-myorder="1">
+						    <figure class="wow fadeInRightBig animated">
+						      	<img src="img/portfolio_1.jpg">
+						      	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 1</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>      
+						</div>
+
+						<div class="col-md-3 mix illustration" data-myorder="2">
+						    <figure class="wow fadeInUpBig animated">
+						    	<img src="img/portfolio_2.jpg">
+						    	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 2</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>    
+						</div>
+
+						<div class="col-md-3 mix logo" data-myorder="3">
+						    <figure class="wow fadeInLeftBig animated">
+						      	<img src="img/portfolio_3.jpg">
+						      	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 3</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>     
+						</div>
+
+						<div class="col-md-3 mix illustration" data-myorder="4">
+						    <figure class="wow fadeInRightBig animated">
+						      	<img src="img/portfolio_4.jpg">
+						      	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 4</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>    
+						</div>
+
+						<div class="col-md-3 mix web_design" data-myorder="5">
+						    <figure class="wow fadeInLeftBig animated">
+						      	<img src="img/portfolio_5.jpg">
+						      	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 5</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>    
+						</div>
+
+						<div class="col-md-3 mix logo" data-myorder="6">
+						    <figure class="wow fadeInRightBig animated">
+						      	<img src="img/portfolio_6.jpg">
+						      	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 6</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>    
+						</div>
+
+						<div class="col-md-3 mix illustration" data-myorder="7">
+						    <figure class="wow fadeInUpBig animated">
+						      	<img src="img/portfolio_7.jpg">
+						      	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 7</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>    
+						</div>
+
+						<div class="col-md-3 mix logo" data-myorder="8">
+						    <figure class="wow fadeInLeftBig animated">
+						      	<img src="img/portfolio_8.jpg">
+						      	<a href="#">
+						      		<figcaption>
+						      			<div class="featured-icon"><i class="fa fa-link"></i></div>
+							      		<h4>Project 8</h4>
+					        			<p>This is Photoshop's version  of Lorem Ips umroin gravida nibh auctor aliquet...</p>
+							      </figcaption>
+							    </a>
+						    </figure>    
+						</div>
+					</div>
+		        </div>
+
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+    <!-- About Us Section -->
+    <section class="section-wrapper" id="aboutus">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-5 col-md-push-5">
+	                <div class="section-title wow fadeInDown">
+	                	<h2>About Us</h2>
+	                	<h4>We’re passionate about simplifying</h4>
+	                </div>
+	            </div>
+	        </div><!-- /.row -->
+	        <div class="row">
+	        	<div class="col-md-6 col-md-push-5">
+	        		<div class="content-about wow zoomInRight">
+	        			<div class="content-icon"><img src="img/icon_1.png"></div>
+	        			<div class="content-text">
+	        				<h4>Powerful Management Tools</h4>
+	        				<p>Lorem quis biben dum auctor. Aenean sollicitudin, lorem quis biben dum auctor, nisi elit consequat ipsum</p>
+	        			</div>
+					</div>
+					<div class="clear"></div>
+					<div class="content-about wow zoomInRight" data-wow-delay="0.2s">
+	        			<div class="content-icon"><img src="img/icon_2.png"></div>
+	        			<div class="content-text">
+	        				<h4>Social Media Operation</h4>
+	        				<p>Lorem quis biben dum auctor. Aenean sollicitudin, lorem quis biben dum auctor, nisi elit consequat ipsum</p>
+	        			</div>
+					</div>
+					<div class="clear"></div>
+					<div class="content-about wow zoomInRight" data-wow-delay="0.4s">
+	        			<div class="content-icon"><img src="img/icon_3.png"></div>
+	        			<div class="content-text">
+	        				<h4>Cost Effective</h4>
+	        				<p>Lorem quis biben dum auctor. Aenean sollicitudin, lorem quis biben dum auctor, nisi elit consequat ipsum</p>
+	        			</div>
+					</div>
+	        	</div>
+	        </div>
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+    <!-- Team Section -->
+    <section class="section-wrapper team" id="team-section">
+    	<div class="container">
+	        
+	        <div class="row">
+	            <div class="col-md-8 col-md-push-2">
+	                <div class="section-title-white wow fadeInDown"><h2>Passionate team members</h2></div>
+	            </div>
+	        </div><!-- /.row -->
+
+	        <div class="container-fluid">
+	        	<div class="row">
+	        		<div id="team-members">
+						<div class="text-center">
+							
+							<div class="col-md-3">
+							    <figure class="wow fadeInUp">
+							      	<img src="img/team_1.jpg">
+							      	<a href="#">
+							      		<figcaption>
+								      		<h4>Ben Uretsky</h4>
+				        					<p>Chief Executive Officer</p>
+				        					<div class="team-social-icon">
+												<a href="#"><i class="fa fa-twitter"></i></a>
+					        					<a href="#"><i class="fa fa-facebook"></i></a>
+					        					<a href="#"><i class="fa fa-google-plus"></i></a>
+					        					<a href="#"><i class="fa fa-linkedin"></i></a>
+					        				</div>
+					        			</figcaption>
+								    </a>
+							    </figure>      
+							</div>
+
+							<div class="col-md-3">
+							    <figure class="wow fadeInUp" data-wow-delay="0.2s">
+							      	<img src="img/team_2.jpg">
+							      	<a href="#">
+							      		<figcaption>
+								      		<h4>Henly Rieve</h4>
+			        						<p>Executive Officer</p>
+				        					<div class="team-social-icon">
+												<a href="#"><i class="fa fa-twitter"></i></a>
+					        					<a href="#"><i class="fa fa-facebook"></i></a>
+					        					<a href="#"><i class="fa fa-google-plus"></i></a>
+					        					<a href="#"><i class="fa fa-linkedin"></i></a>
+					        				</div>
+					        			</figcaption>
+								    </a>
+							    </figure>      
+							</div>
+
+							<div class="col-md-3">
+							    <figure class="wow fadeInUp" data-wow-delay="0.4s">
+							      	<img src="img/team_3.jpg">
+							      	<a href="#">
+							      		<figcaption>
+								      		<h4>James Anderson</h4>
+								      		<p>Developer</p>
+				        					<div class="team-social-icon">
+												<a href="#"><i class="fa fa-twitter"></i></a>
+					        					<a href="#"><i class="fa fa-facebook"></i></a>
+					        					<a href="#"><i class="fa fa-google-plus"></i></a>
+					        					<a href="#"><i class="fa fa-linkedin"></i></a>
+					        				</div>
+					        			</figcaption>
+								    </a>
+							    </figure>      
+							</div>
+
+							<div class="col-md-3">
+							    <figure class="wow fadeInUp" data-wow-delay="0.6s">
+							      	<img src="img/team_4.jpg">
+							      	<a href="#">
+							      		<figcaption>
+								      		<h4>Veronica Marce</h4>
+								      		<p>Designer</p>
+				        					<div class="team-social-icon">
+												<a href="#"><i class="fa fa-twitter"></i></a>
+					        					<a href="#"><i class="fa fa-facebook"></i></a>
+					        					<a href="#"><i class="fa fa-google-plus"></i></a>
+					        					<a href="#"><i class="fa fa-linkedin"></i></a>
+					        				</div>
+					        			</figcaption>
+								    </a>
+							    </figure>      
+							</div>
+
+						</div>
+			        </div>
+		        </div><!-- /.row -->
+	        </div><!-- /.container fluid -->
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+        
+    <!-- Loyal Clients & Testimonial Section -->
+    <section class="section-wrapper" id="clients">
+    	<div class="container">
+	        
+	        <div class="row">
+	            <div class="col-md-8 col-md-push-2">
+	                <div class="section-title-white wow fadeInDown">
+	                	<h2>Clients' Gratitude</h2>
+	                </div>
+	            </div>
+	        </div><!-- /.row -->
+	        
+	        <div class="container-fluid">
+	        	<div class="row">
+	        		<div class="col-md-8 col-md-push-2">
+	        			<div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+							    <div class="item active">
+							    	<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+							    	<div class="testimonial-img">
+							    		<div class="img-responsive"><img src="img/team_1.jpg" alt="KITE :CloudBee" /></div>
+							    	</div>
+							    	<div class="testimonial-content">
+							    		<p>I really, really loved the flexibility of this program!  I was employed full-time as the communications manager for the York Revolution baseball team, so I basically worked around the clock.</p>
+							  			<h4>James Cupper</h4>
+							  			<p class="job-post">COO, Save Planet</p>
+							    	</div>
+							    </div>
+
+							    <div class="item">
+							    	<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+							    	<div class="testimonial-img">
+							    		<div class="img-responsive"><img src="img/team_2.jpg" alt="KITE :CloudBee" /></div>
+							    	</div>
+							    	<div class="testimonial-content">
+							    		<p>I really, really loved the flexibility of this program!  I was employed full-time as the communications manager for the York Revolution baseball team, so I basically worked around the clock.</p>
+							  			<h4>Henly Reive</h4>
+							  			<p class="job-post">CFO, Coffee World</p>
+							    	</div>
+							    </div>
+
+							    <div class="item">
+							    	<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+							    	<div class="testimonial-img">
+							    		<div class="img-responsive"><img src="img/team_3.jpg" alt="KITE :CloudBee" /></div>
+							    	</div>
+							    	<div class="testimonial-content">
+							    		<p>I really, really loved the flexibility of this program!  I was employed full-time as the communications manager for the York Revolution baseball team, so I basically worked around the clock.</p>
+							  			<h4>Gorge Harison</h4>
+							  			<p class="job-post">CTO, ZIP Inc.</p>
+							    	</div>
+							    </div>
+
+							    <div class="item">
+							    	<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+							    	<div class="testimonial-img">
+							    		<div class="img-responsive"><img src="img/team_4.jpg" alt="KITE :CloudBee" /></div>
+							    	</div>
+							    	<div class="testimonial-content">
+							    		<p>I really, really loved the flexibility of this program!  I was employed full-time as the communications manager for the York Revolution baseball team, so I basically worked around the clock.</p>
+							  			<h4>Kelly Anderson</h4>
+							  			<p class="job-post">COO, Coffe Point</p>
+							    	</div>
+							    </div>
+
+							    <div class="item">
+							    	<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+							    	<div class="testimonial-img">
+							    		<div class="img-responsive"><img src="img/team_5.jpg" alt="KITE :CloudBee" /></div>
+							    	</div>
+							    	<div class="testimonial-content">
+							    		<p>I really, really loved the flexibility of this program!  I was employed full-time as the communications manager for the York Revolution baseball team, so I basically worked around the clock.</p>
+							  			<h4>Jonathon Troot</h4>
+							  			<p class="job-post">CIO, Elefont</p>
+							    	</div>
+							    </div>
+							</div>
+							<div class="clear"></div>
+
+						  	<!-- Controls -->
+						  	<a class="left carousel-control" href="#carousel-testimonial" role="button" data-slide="prev">
+						    	<span class="glyphicon glyphicon-chevron-left"></span>
+						  	</a>
+						  	<a class="right carousel-control" href="#carousel-testimonial" role="button" data-slide="next">
+						    	<span class="glyphicon glyphicon-chevron-right"></span>
+						  	</a>
+						  	<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-testimonial" data-slide-to="0" class="client-logo active client-logo-1"></li>
+						    	<li data-target="#carousel-testimonial" data-slide-to="1" class="client-logo client-logo-2"></li>
+						    	<li data-target="#carousel-testimonial" data-slide-to="2" class="client-logo client-logo-3"></li>
+						    	<li data-target="#carousel-testimonial" data-slide-to="3" class="client-logo client-logo-4"></li>
+						    	<li data-target="#carousel-testimonial" data-slide-to="4" class="client-logo client-logo-5"></li>
+						  	</ol>
+						</div>
+	        		</div>
+	        	</div><!-- /.row -->
+	        </div><!-- /.container-fluid -->
+
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+    <section class="section-wrapper call-to-action call-to-action-dark" id="call-to-action-2">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-7 col-md-push-1">
+	                <div class="section-title-white wow fadeInDown">
+	                	<h2>Enjoy Best, Spend Less !!!</h2>
+	                	<h4>We’re passionate about simplifying...</h4>
+	                </div>
+	            </div>
+	            <div class="col-md-2 col-md-push-1 btn-call-to-action"><a class="btn btn-default" href="#">GET STARTED NOW</a></div>
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+	</section><!-- /.wrapper -->
+
+    <!-- Price Table Section -->
+    <section class="section-wrapper" id="price-table">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-8 col-md-push-2">
+	                <div class="section-title-white wow fadeInDown">
+	                	<h2>FEEL SPECIAL AS YOU</h2>
+	                	<h4>We provide the best service as we promise...</h4>
+	                </div>
+	            </div> 
+	        </div><!-- /.row -->
+	        <div class="row">
+				<div class="tab-price">
+					<div class="col-md-4 col-md-push-4 price-tab-align">
+						<ul class="nav nav-tabs" role="tablist" id="pricing-tab">
+							<li><a href="#weekly-price" role="tab" data-toggle="tab">Weekly</a></li>
+							<li class="active"><a href="#monthly-price" role="tab" data-toggle="tab">Monthly</a></li>
+							<li><a href="#yearly-price" role="tab" data-toggle="tab">Yearly</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+
+					<div class="tab-content wow fadeInUp">
+						<!-- #weekly -->
+						<div class="tab-pane" id="weekly-price">
+							
+							<div class="col-md-4">
+								<div class="price-table-item">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Standerd</h4>
+											<p>Weekly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$9<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="price-table-item price-table-item-special">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Gold</h4>
+											<p>Weekly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$19<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="price-table-item">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Premium</h4>
+											<p>Weekly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$24<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+						</div><!-- /#weekly -->
+
+						<!-- #monthly --> 
+						<div class="tab-pane fade in active" id="monthly-price">
+							
+							<div class="col-md-4">
+								<div class="price-table-item">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Standerd</h4>
+											<p>Monthly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$29<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="price-table-item price-table-item-special">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Gold</h4>
+											<p>Monthly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$39<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="price-table-item">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Premium</h4>
+											<p>Monthly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$49<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</i></a>
+						        	</div>
+						        </div>
+							</div>
+						</div><!-- /#monthly -->
+
+						<!-- #yearly -->
+						<div class="tab-pane fade" id="yearly-price">
+							
+							<div class="col-md-4">
+								<div class="price-table-item">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Standerd</h4>
+											<p>Yearly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$69<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="price-table-item price-table-item-special">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Gold</h4>
+											<p>Yearly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$89<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="price-table-item">
+									<div class="price-table-topbar">
+										<div class="price-table-offer left">
+											<h4>Premium</h4>
+											<p>Yearly</p>
+										</div>
+										<div class="price-table-offer right">
+						        			<h2>$119<span class="decimal-figure">.99</span></h2>
+						        		</div>
+						        	</div>
+						        	<div class="clear"></div>
+						        	<div class="price-table-features">
+						        		<p><b>24/7</b> TECH SUPPORT</p>
+						        		<p><b>25</b> PROJECTS</p>
+						        		<p><b>5GB</b> STORAGE</p>
+						        		<p><b>UNLIMITED</b> BANDWIDTH</p>
+						        		<p><b>UNLIMITED</b> USERS</p>
+						        		<p><b>3 MONTHS</b> SUBSCRIPTION</p>
+						        	</div>
+						        	<div class="price-table-btn">
+						        		<a href="#" class="btn btn-default">signup</a>
+						        	</div>
+						        </div>
+							</div>
+						</div><!-- /#yearly -->
+					</div>
+				</div>
+			</div>
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+	<!-- Timeline Blog Section -->
+    <section class="section-wrapper blog-section" id="blog">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-8 col-md-push-2">
+	                <div class="section-title-white wow fadeInDown">
+	                	<h2>OUR COZY BLOG</h2>
+	                	<h4>We're here to help you as you need...</h4>
+	                </div>
+	            </div>
+	        </div><!-- /.row -->
+
+
+	        <!-- Timeline Blog -->
+	        <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-img wow fadeInUp">
+                                <img class="img-circle img-responsive" src="img/portfolio_1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel  wow fadeInLeft">
+                                <div class="timeline-heading">
+                                    <p>AUG 14, 2014</p>
+                                    <a href="#"><h4 class="heading">Our Humble Beginnings</h4></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <a href="" class="btn btn-small-default">Read More</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-img wow fadeInUp">
+                                <img class="img-circle img-responsive" src="img/portfolio_2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel wow fadeInRight">
+                                <div class="timeline-heading">
+                                    <p>AUG 13, 2014</p>
+                                    <a href="#"><h4 class="heading">Our Humble Beginnings</h4></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <a href="" class="btn btn-small-default">Read More</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-img wow fadeInUp">
+                                <img class="img-circle img-responsive" src="img/portfolio_3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel wow fadeInLeft">
+                                <div class="timeline-heading">
+                                    <p>AUG 12, 2014</p>
+                                    <a href="#"><h4 class="heading">Our Humble Beginnings</h4></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <a href="" class="btn btn-small-default">Read More</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-img wow fadeInUp">
+                                <img class="img-circle img-responsive" src="img/portfolio_4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel wow fadeInRight">
+                                <div class="timeline-heading">
+                                    <p>AUG 10, 2014</p>
+                                    <a href="#"><h4 class="heading">Our Humble Beginnings</h4></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <a href="" class="btn btn-small-default">Read More</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div><!-- /.row -->
+
+
+	        <div class="row">
+	        	<div class="col-md-12 btn-position-center"><a href="#" class="btn btn-default">Load More</a></div>
+	        </div>
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+    <!-- Call To Action Section -->
+    <section class="section-wrapper call-to-action call-to-action-dark" id="call-to-action-3">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-7 col-md-push-1">
+	                <div class="section-title-white wow fadeInDown">
+	                	<h2>Enjoy the 24/7 Support</h2>
+	                	<h4>View & explore new offers...</h4>
+	                </div>
+	            </div>
+	            <div class="col-md-2 col-md-push-1 btn-call-to-action"><a class="btn btn-default" href="#">GET STARTED NOW</a></div>
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+	</section><!-- /.wrapper -->
+
+    <!-- Contact Us Section -->
+    <section class="section-wrapper" id="contact">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-8 col-md-push-2">
+	                <div class="section-title-white wow fadeInDown">
+	                	<h2>Contact Us</h2>
+	                </div>
+	            </div>      
+	        </div><!-- /.row -->
+	        <div class="container" id="feedback">
+	        	<div class="row">
+	        		<div class="col-md-6 col-md-push-3">
+	        			<form name="feedback" role="form" action="#" method="post">
+						  <div class="form-group">
+						    <input type="text" class="form-control" id="InputName" placeholder="type your name here" required>
+						    <input type="email" class="form-control" id="InputEmail1" placeholder="enter email address here" required>
+						    <input type="text" class="form-control" id="InputComment" placeholder="type your comments" required>
+						  </div>
+						  <button type="submit" class="btn btn-submit"><i class="fa fa-send"></i></button>
+						</form>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+	<!-- Map -->
+	<section class="map">
+		<div id="googleMap" style="width:100%;height:100%;"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-md-push-7">
+					<div class="contact-details wow fadeInRight">
+						<h4>KITE: CloudBee</h4>
+						<div class="fa fa-map-marker"></div>
+						<div class="contact-details-item">
+							<p>Faruque Rupayan Tower (5th Floor)</p>
+							<p>32, Kemal Ataturk Avenue, Banani</p>
+							<p>Dhaka-1213, Bangladesh.</p>
+						</div>
+						<div class="clear"></div>
+						<div class="fa fa-envelope"></div>
+						<div class="contact-details-item">
+							<a href="#">cloudbee@live.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Social Media & Newsletter -->
+    <section class="section-wrapper" id="social-media">
+    	<div class="container">
+	        <div class="row">
+	            <div class="col-md-6">
+	                <div class="newsletter-content left wow fadeInLeft">
+	                	<h4>Newsletter</h4>
+	                	<form name="newsletter" role="form" action="#" method="post">
+						  <div class="form-group">
+						    <input type="email" class="form-control" id="InputEmail1" placeholder="enter email address here" required>
+						    <button type="submit" class="btn btn-submit"><i class="fa fa-send"></i></button>
+						  </div>
+						</form>
+	                </div>
+	            </div>
+	            <div class="col-md-6">
+	                <div class="social-media-content right wow fadeInRight">
+	                	<h4>Social Media</h4>
+	                	<div class="social-media-icon">
+	                		<a href="#"><i class="fa fa-twitter"></i></a>
+	                		<a href="#"><i class="fa fa-facebook"></i></a>
+	                		<a href="#"><i class="fa fa-google-plus"></i></a>
+	                		<a href="#"><i class="fa fa-linkedin"></i></a>
+	                	</div>
+	                </div>
+	            </div>     
+	        </div><!-- /.row -->
+	    </div><!-- /.container -->
+    </section><!-- /.section-wrapper -->
+
+
+
+	<!--  top Scroller   -->
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-text-left"><p>Copyright &copy; KITE 2014</p></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-logo-img"><a class="page-scroll" href="#page-top" data-target=".navbar-fixed-bottom"><img src="img/logo-sq.png" alt="KITE: CloudBee Project" /></a></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-text-right">Designed & Developed by <a href="http://cloudbee-bd.com">CloudBee</a></div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container -->
+    </footer><!-- /.footer -->
+
+
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <!-- jQuery UI 1.10.2 -->
+	<script src="js/jquery-ui.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Easing: Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+     <!-- Mixitup: Plugin JavaScript -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+    	 $(function(){
+		    $('#portfolio-items').mixItUp();  
+		});
+    </script>
+    <!-- WOW JS: Plugin JavaScript  -->
+    <script type="text/javascript" src="js/dist/wow.js"></script>
+    <script type="text/javascript">
+    	 wow = new WOW(
+    	 		{
+					animation: {
+						duration: 400,
+						effects: 'fade stagger(34ms) translateZ(-360px) translateY(10%)',
+						easing: 'ease'
+					}
+				}
+		    );
+		    wow.init();
+    </script>
+    <script type="text/javascript">
+		// jQuery to collapse the navbar on scroll
+		$(window).scroll(function() {
+		    if ($(".navbar").offset().top > 50) {
+		        $(".navbar-fixed-top").addClass("top-nav-collapse");
+		    } else {
+		        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+		    }
+		});
+		// jQuery for page scrolling feature - requires jQuery Easing plugin
+		$(function() {
+		    $('a.page-scroll').bind('click', function(event) {
+		        var $anchor = $(this);
+		        $('html, body').stop().animate({
+		            scrollTop: $($anchor.attr('href')).offset().top
+		        }, 1500, 'easeInOutExpo');
+		        event.preventDefault();
+		    });
+		});
+		// Closes the Responsive Menu on Menu Item Click
+		$('.navbar-collapse ul li a').click(function() {
+		    $('.navbar-toggle:visible').click();
+		});
+    </script>
+    <!-- Script to Activate the Site Carousel -->
+    <script>
+	    $('#myCarousel').carousel({
+	        interval: 5000 //changes the speed
+	    })
+    </script>    
+	<!-- jQuery CountUp Minified -->
+    <script type="text/javascript" src="js/countUp.min.js"></script>    
+    <!-- Script to Activate the Testimonial Carousel -->
+    <script>
+	    $('#carousel-testimonial').carousel({
+	        interval: 5000 //changes the speed
+	    })
+    </script>
+</body>
+
+</html>

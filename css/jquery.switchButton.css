@@ -1,0 +1,51 @@
+#price-toggle-wrapper {
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 236px;
+}
+.price-toggle.demo .switch-button-label {
+    font-size: 20px;
+}
+
+.switch-button-label {
+    float: left;
+    cursor: pointer;
+}
+
+.switch-button-label.off {
+    color: #9f9f9f;
+}
+
+.switch-button-label.on {
+    color: #1abc9c;
+}
+
+.switch-button-background {
+    float: left;
+    position: relative;
+
+    background: #1abc9c;
+    border: 1px solid #1abc9c;
+
+    margin: 1px 20px;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+
+    cursor: pointer;
+}
+
+.switch-button-button {
+    position: absolute;
+
+    left: -1px;
+    top : -1px;
+
+    background: #ffffff;
+    border: 1px solid #1abc9c;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
